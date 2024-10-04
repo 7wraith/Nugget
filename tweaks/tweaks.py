@@ -5,152 +5,152 @@ from .basic_plist_locations import FileLocation
 
     
 tweaks = {
-    ## MobileGestalt Tweaks
-    "DynamicIsland": MobileGestaltPickerTweak("Toggle Dynamic Island", "oPeik/9e8lQWMszEjbPzng", "ArtworkDeviceSubType", [2436, 2556, 2796, 2976, 2622, 2868]),
+    ## MobilGestalt Ayarları
+    "DynamicIsland": MobileGestaltPickerTweak("Dinamik Ada'yı Değiştir", "oPeik/9e8lQWMszEjbPzng", "ArtworkDeviceSubType", [2436, 2556, 2796, 2976, 2622, 2868]),
     "RdarFix": RdarFixTweak(),
-    "ModelName": MobileGestaltTweak("Set Device Model Name", "oPeik/9e8lQWMszEjbPzng", "ArtworkDeviceProductDescription", "", TweakModifyType.TEXT),
-    "BootChime": MobileGestaltTweak("Toggle Boot Chime", "QHxt+hGLaBPbQJbXiUJX3w"),
-    "ChargeLimit": MobileGestaltTweak("Toggle Charge Limit", "37NVydb//GP/GrhuTN+exg"),
-    "CollisionSOS": MobileGestaltTweak("Toggle Collision SOS", "HCzWusHQwZDea6nNhaKndw"),
-    "TapToWake": MobileGestaltTweak("Toggle Tap To Wake (iPhone SE)", "yZf3GTRMGTuwSV/lD7Cagw"),
-    "CameraButton": MobileGestaltMultiTweak("Toggle iPhone 16 Settings", {"CwvKxM2cEogD3p+HYgaW0Q": 1, "oOV1jhJbdV3AddkcCg0AEA": 1}, min_version=Version("18.0")),
-    "Parallax": MobileGestaltTweak("Disable Wallpaper Parallax", "UIParallaxCapability", value=0),
-    "StageManager": MobileGestaltTweak("Toggle Stage Manager Supported (WARNING: risky on some devices, mainly phones)", "qeaj75wk3HF4DwQ8qbIi7g", value=1),
-    "Medusa": MobileGestaltMultiTweak("Toggle Medusa (iPad Multitasking) (WARNING: may be risky on some phones)", {"mG0AnH/Vy1veoqoLRAIgTA": 1, "UCG5MkVahJxG1YULbbd5Bg": 1, "ZYqko/XM5zD3XBfN5RmaXA": 1, "nVh/gwNpy7Jv1NOk00CMrw": 1, "uKc7FPnEO++lVhHWHFlGbQ": 1}),
-    "iPadApps": MobileGestaltTweak("Allow iPad Apps on iPhone", "9MZ5AdH43csAUajl/dU+IQ", value=[1, 2]),
-    "Shutter": MobileGestaltMultiTweak("Disable Region Restrictions (ie. Shutter Sound)", {"h63QSdBCiT/z0WU6rdQv6Q": "US", "zHeENZu+wbg7PUprwNwBWg": "LL/A"}),
-    "FindMyFriends": MobileGestaltTweak("Toggle Find My Friends", "Y2Y67z0Nq/XdDXgW2EeaVg"),
-    "Pencil": MobileGestaltTweak("Toggle Apple Pencil", "yhHcB0iH0d1XzPO/CFd3ow"),
-    "ActionButton": MobileGestaltTweak("Toggle Action Button", "cT44WE1EohiwRzhsZ8xEsw"),
-    "InternalStorage": MobileGestaltTweak("Toggle Internal Storage (WARNING: risky for some devices, mainly iPads)", "LBJfwOEzExRxzlAnSuI7eg"),
-    "InternalInstall": MobileGestaltTweak("Set as Apple Internal Install (ie Metal HUD in any app)", "EqrsVvjcYDdxHBiQmGhAWw", divider_below=True),
-    "EUEnabler": EligibilityTweak("EU Enabler", divider_below=True),
-    "AOD": MobileGestaltMultiTweak("Always On Display",
+    "ModelName": MobileGestaltTweak("Cihaz Model Adını Ayarla", "oPeik/9e8lQWMszEjbPzng", "ArtworkDeviceProductDescription", "", TweakModifyType.TEXT),
+    "BootChime": MobileGestaltTweak("Önyükleme Zil Sesini Aç", "QHxt+hGLaBPbQJbXiUJX3w"),
+    "ChargeLimit": MobileGestaltTweak("Şarj Sınırlaması Ayarla", "37NVydb//GP/GrhuTN+exg"),
+    "CollisionSOS": MobileGestaltTweak("Çarpışma SOS'ini Aç", "HCzWusHQwZDea6nNhaKndw"),
+    "TapToWake": MobileGestaltTweak("Dokunarak Uyandırma (iPhone SE içindir)", "yZf3GTRMGTuwSV/lD7Cagw"),
+    "CameraButton": MobileGestaltMultiTweak("iPhone 16 Ayarlarını Etkinleştir", {"CwvKxM2cEogD3p+HYgaW0Q": 1, "oOV1jhJbdV3AddkcCg0AEA": 1}, min_version=Version("18.0")),
+    "Parallax": MobileGestaltTweak("Parallax Duvar Kağıdını Devre dışı bırak", "UIParallaxCapability", value=0),
+    "StageManager": MobileGestaltTweak("Sahne Yöneticisi'ni Etkinleştir (UYARI:Bazı Cihazlarda,Özellikle iPhone'lar da Risklidir)", "qeaj75wk3HF4DwQ8qbIi7g", value=1),
+    "Medusa": MobileGestaltMultiTweak("Medusa'yı Etkinleştir (iPad'lerde bulunan Multitasking özelliği) (UYARI: Bazı telefonlarda riskli olabilir)", {"mG0AnH/Vy1veoqoLRAIgTA": 1, "UCG5MkVahJxG1YULbbd5Bg": 1, "ZYqko/XM5zD3XBfN5RmaXA": 1, "nVh/gwNpy7Jv1NOk00CMrw": 1, "uKc7FPnEO++lVhHWHFlGbQ": 1}),
+    "iPadApps": MobileGestaltTweak("iPad Uygulamalarını iPhone da Çalıştır", "9MZ5AdH43csAUajl/dU+IQ", value=[1, 2]),
+    "Shutter": MobileGestaltMultiTweak("Bölge Kısıtlamalarını Devre Dışı Bırak (örn. Deklanşör Sesi)", {"h63QSdBCiT/z0WU6rdQv6Q": "US", "zHeENZu+wbg7PUprwNwBWg": "LL/A"}),
+    "FindMyFriends": MobileGestaltTweak("Arkadaşlarımı Bul'u Etkinleştir", "Y2Y67z0Nq/XdDXgW2EeaVg"),
+    "Pencil": MobileGestaltTweak("Apple Pencil Etkinleştir", "yhHcB0iH0d1XzPO/CFd3ow"),
+    "ActionButton": MobileGestaltTweak("Eylem Butonu'nu Etkinleştir", "cT44WE1EohiwRzhsZ8xEsw"),
+    "InternalStorage": MobileGestaltTweak("Dahili Depolama'yı Etkinleştir (UYARI: Bazı cihazlar için risklidir, özellikle iPad'ler için)", "LBJfwOEzExRxzlAnSuI7eg"),
+    "InternalInstall": MobileGestaltTweak("Apple Dahili Yükleme olarak ayarlayın (yani herhangi bir uygulamada Metal HUD)", "EqrsVvjcYDdxHBiQmGhAWw", divider_below=True),
+    "EUEnabler": EligibilityTweak("Avrupa Birliği Ayarlarını Etkinleştir", divider_below=True),
+    "AOD": MobileGestaltMultiTweak("Her Zaman Açık Ekran",
                             {"2OOJf1VhaM7NxfRok3HbWQ": 1, "j8/Omm6s1lsmTDFsXjsBfA": 1},
                             min_version=Version("18.0")),
 
-    ## Feature Flag Tweaks
-    "ClockAnim": FeatureFlagTweak("Toggle Lockscreen Clock Animation", flag_category='SpringBoard',
+    ## Popüler Özellikler
+    "ClockAnim": FeatureFlagTweak("Kilit Ekranında Saat Animasyonu", flag_category='SpringBoard',
                      flag_names=['SwiftUITimeAnimation'],
                      min_version=Version("18.0")),
-    "Lockscreen": FeatureFlagTweak("Toggle Duplicate Lockscreen Button and Lockscreen Quickswitch", flag_category="SpringBoard",
+    "Lockscreen": FeatureFlagTweak("Kilit Ekranın'daki Uygulamaları Özelleştir", flag_category="SpringBoard",
                      flag_names=['AutobahnQuickSwitchTransition', 'SlipSwitch', 'PosterEditorKashida'],
                      min_version=Version("18.0")),
-    "PhotoUI": FeatureFlagTweak("Enable Old Photo UI", flag_category='Photos', flag_names=['Lemonade'], is_list=False, inverted=True, min_version=Version("18.0")),
-    "AI": FeatureFlagTweak("Enable Apple Intelligence", flag_category='SpringBoard', flag_names=['Domino', 'SuperDomino'], min_version=Version("18.1"), divider_below=True),
+    "PhotoUI": FeatureFlagTweak("Eski Galeri Arayüzü (ios17)", flag_category='Photos', flag_names=['Lemonade'], is_list=False, inverted=True, min_version=Version("18.0")),
+    "AI": FeatureFlagTweak("Apple Intelligence'ı Etkinleştir", flag_category='SpringBoard', flag_names=['Domino', 'SuperDomino'], min_version=Version("18.1"), divider_below=True),
 
-    ## AI Enabler
+    ## AI Etkinleştirme
     "AIEligibility": AITweak(),
-    "AIGestalt": MobileGestaltTweak("Enable Apple Intelligence (for Unsupported Devices) (Gestalt)", "A62OafQ85EJAiiqKn4agtg", min_version=Version("18.1")),
-    "SpoofModel": MobileGestaltTweak("Spoof Device Model", "h9jDsbgj7xIVeIQ8S3/X3Q", value="iPhone17,3", min_version=Version("18.1"), divider_below=True),
+    "AIGestalt": MobileGestaltTweak("Apple Intelligence'ı Etkinleştir (Desteklenmeyen Cihazlar için) (Gestalt)", "A62OafQ85EJAiiqKn4agtg", min_version=Version("18.1")),
+    "SpoofModel": MobileGestaltTweak("Sahte Cihaz Modeli", "h9jDsbgj7xIVeIQ8S3/X3Q", value="iPhone17,3", min_version=Version("18.1"), divider_below=True),
 
     ## Springboard Tweaks
     "LockScreenFootnote": BasicPlistTweak(
-        "Set Lock Screen Footnote Text",
+        "Kilit Ekranı Dipnot Metnini Ayarla",
         FileLocation.footnote,
         key="LockScreenFootnote", value="",
         edit_type=TweakModifyType.TEXT
     ),
     "SBDontLockAfterCrash": BasicPlistTweak(
-        "Disable Lock After Respring",
+        "Yeniden Başlatma Sonrası Kilit Ekranı'nı Devredışı Bırak",
         FileLocation.springboard,
         "SBDontLockAfterCrash"
     ),
     "SBDontDimOrLockOnAC": BasicPlistTweak(
-        "Disable Screen Dimming While Charging",
+        "Şarj Sırasında Ekran Karartmayı Devre Dışı Bırak",
         FileLocation.springboard,
         "SBDontDimOrLockOnAC"
     ),
     "SBHideLowPowerAlerts": BasicPlistTweak(
-        "Disable Low Battery Alerts",
+        "Düşük Pil Uyarılarını Devredışı Bırak",
         FileLocation.springboard,
         "SBHideLowPowerAlerts"
     ),
     "SBNeverBreadcrumb": BasicPlistTweak(
-        "Disable Breadcrumb",
+        "Geri dönme Butonu'nu Devredışı Bırak",
         FileLocation.springboard,
         "SBNeverBreadcrumb"
     ),
     "SBShowSupervisionTextOnLockScreen": BasicPlistTweak(
-        "Show Supervision Text on Lock Screen",
+        "Kilit Ekranında Supervision Metnini Göster",
         FileLocation.springboard,
         "SBShowSupervisionTextOnLockScreen"
     ),
     "AirplaySupport": BasicPlistTweak(
-        "Enable AirPlay support for Stage Manager",
+        "Sahne Yöneticisi için AirPlay desteğini etkinleştirin",
         FileLocation.springboard,
         "SBExtendedDisplayOverrideSupportForAirPlayAndDontFileRadars",
         divider_below=True
     ),
 
-    ## Internal Options
+    ## Dahili Seçenekler
     "SBBuildNumber": BasicPlistTweak(
-        "Show Build Version in Status Bar",
+        "Durum Çubuğunda Yapı Sürümünü Göster",
         FileLocation.globalPreferences,
         "UIStatusBarShowBuildVersion"
     ),
     "RTL": BasicPlistTweak(
-        "Force Right-to-Left Layout",
+        "Sağdan Sola Düzeni Zorla(RTL)",
         FileLocation.globalPreferences,
         "NSForceRightToLeftWritingDirection"
     ),
     "MetalForceHudEnabled": BasicPlistTweak(
-        "Enable Metal HUD Debug",
+        "Metal HUD Hata Ayıklamayı Etkinleştir",
         FileLocation.globalPreferences,
         "MetalForceHudEnabled"
     ),
     "AccessoryDeveloperEnabled": BasicPlistTweak(
-        "Enable Accessory Debugging",
+        "Aksesuar Hata Ayıklamayı Etkinleştir",
         FileLocation.globalPreferences,
         "AccessoryDeveloperEnabled"
     ),
     "iMessageDiagnosticsEnabled": BasicPlistTweak(
-        "Enable iMessage Debugging",
+        "iMessage Hata Ayıklamayı Etkinleştir",
         FileLocation.globalPreferences,
         "iMessageDiagnosticsEnabled"
     ),
     "IDSDiagnosticsEnabled": BasicPlistTweak(
-        "Enable Continuity Debugging",
+        "Süreklilik Hata Ayıklamayı Etkinleştir",
         FileLocation.globalPreferences,
         "IDSDiagnosticsEnabled"
     ),
     "VCDiagnosticsEnabled": BasicPlistTweak(
-        "Enable FaceTime Debugging",
+        "FaceTime Hata Ayıklamayı Etkinleştir",
         FileLocation.globalPreferences,
         "VCDiagnosticsEnabled"
     ),
     "AppStoreDebug": BasicPlistTweak(
-        "Enable App Store Debug Gesture",
+        "App Store Hata Ayıklama Hareketini Etkinleştir",
         FileLocation.appStore,
         "debugGestureEnabled"
     ),
     "NotesDebugMode": BasicPlistTweak(
-        "Enable Notes App Debug Mode",
+        "Notlar Uygulaması Hata Ayıklama Modunu Etkinleştir",
         FileLocation.notes,
         "DebugModeEnabled"
     ),
     "BKDigitizerVisualizeTouches": BasicPlistTweak(
-        "Show Touches With Debug Info",
+        "Hata Ayıklama Bilgileriyle Dokunuşları Göster",
         FileLocation.backboardd,
         "BKDigitizerVisualizeTouches"
     ),
     "BKHideAppleLogoOnLaunch": BasicPlistTweak(
-        "Hide Respring Icon",
+        "Yeniden Başlat Simgesini Gizle",
         FileLocation.backboardd,
         "BKHideAppleLogoOnLaunch"
     ),
     "EnableWakeGestureHaptic": BasicPlistTweak(
-        "Vibrate on Raise-to-Wake",
+        "Uyandırmak için Kaldırıldığında Titreşim",
         FileLocation.coreMotion,
         "EnableWakeGestureHaptic"
     ),
     "PlaySoundOnPaste": BasicPlistTweak(
-        "Play Sound on Paste",
+        "Yapıştırırken Sesi Çal",
         FileLocation.pasteboard,
         "PlaySoundOnPaste"
     ),
     "AnnounceAllPastes": BasicPlistTweak(
-        "Show Notifications for System Pastes",
+        "Sistem Yapıştırmaları için Bildirimleri Göster",
         FileLocation.pasteboard,
         "AnnounceAllPastes"
     )

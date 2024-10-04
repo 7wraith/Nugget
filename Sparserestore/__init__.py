@@ -20,14 +20,14 @@ def perform_restore(backup: backup.Backup, reboot: bool = False, lockdown_client
                 mb.restore(backup_dir, system=True, reboot=False, copy=False, source=".")
     except PyMobileDevice3Exception as e:
         if "Find My" in str(e):
-            print("Find My must be disabled in order to use this tool.")
-            print("Disable Find My from Settings (Settings -> [Your Name] -> Find My) and then try again.")
+            print("Bu aracı kullanabilmek için Bul özelliğinin devre dışı bırakılması gerekir.")
+            print("Ayarlar'dan (Ayarlar -> [Adınız] -> Bul) Bul özelliğini devre dışı bırakın ve ardından tekrar deneyin.")
             raise e
         elif "crash_on_purpose" not in str(e):
             raise e
         else:
             if reboot and lockdown_client != None:
-                print("Success! Rebooting your device...")
+                print("Başarılı! Cihazınız yeniden başlatılıyor...")
                 with DiagnosticsService(lockdown_client) as diagnostics_service:
                     diagnostics_service.restart()
-                print("Remember to turn Find My back on!")
+                print("Bul'u açmayı unutmayın!")

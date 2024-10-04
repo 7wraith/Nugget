@@ -510,7 +510,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     ## APPLY PAGE
     def on_chooseGestaltBtn_clicked(self):
-        selected_file, _ = QtWidgets.QFileDialog.getOpenFileName(self, "Select Mobile Gestalt File", "", "Plist Files (*.plist)", options=QtWidgets.QFileDialog.ReadOnly)
+        selected_file, _ = QtWidgets.QFileDialog.getOpenFileName(self, "Mobile Gestalt Dosyasını Seç", "", "Plist Dosyası (*.plist)", options=QtWidgets.QFileDialog.ReadOnly)
         if selected_file == "" or selected_file == None:
             self.device_manager.data_singleton.gestalt_path = None
             self.ui.gestaltLocationLbl.setText("None")
